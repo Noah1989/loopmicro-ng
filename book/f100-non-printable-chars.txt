@@ -1,0 +1,30 @@
+
+
+
+Hex codes 00 through 1f are the ASCII non-printable characters.  They have
+special meanings. Most of them are not used very often.  Important ones are:
+
+  • 00 NUL - Null: a byte with all zero bits, often used as end of string	
+  • 07 BEL - Bell: makes a sound or flashes the terminal screen			
+  • 08 BS  - Backspace: moves the cursor back, usually deleting a character	
+  • 09 HT  - Horizontal tab: moves the cursor forward to the next tab stop	
+  • 0a LF  - Line Feed: advances the cursor to the next line.			
+  • 0f CR  - Carriage Return: moves the cursor to the beginning of the line	
+
+Unix-like systems use a single LF to denote the end of a line.  CP/M, DOS and
+Windows use the sequence CR LF.  These two are the most common variants, but
+some systems use other line endings such as a single CR or non-standard bytes.
+
+Alhough there are non-pritable, the bytes can still be written to video memory
+and thus become visible.  The table below shows the symbols from code page 437
+that was used for the orignial IBM PC.  The bitmap fonts included in this book
+use those glyphs as well.
+
+    ┌────────┬────────┬────────┬────────┬────────┬────────┬────────┬────────┐	
+    │00 NUL  │01 SOH ☺│02 STX ☻│03 ETX ♥│04 EOT ♦│05 ENQ ♣│06 ACK ♠│07 BEL •│	
+    │08 BS  ◘│09 HT  ○│0a LF  ◙│0b VT  ♂│0c FF  ♀│0d CR  ♪│0e SO  ♫│0f SI  ☼│	
+    │10 DLE ►│11 DC1 ◄│12 DC2 ↕│13 DC3 ‼│14 DC4 ¶│15 NAK §│16 SYN ▬│17 ETB ↨│	
+    │18 CAN ↑│19 EM  ↓│1a SUB →│1b ESC ←│1c FS  ∟│1d GS  ↔│1e RS  ▲│1f US  ▼│	
+    └────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┘	
+
+
