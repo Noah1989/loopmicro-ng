@@ -2,7 +2,7 @@
 
 
 Hex codes 00 through 1f are the ASCII non-printable characters.  They have
-special meanings. Most of them are not used very often.  Important ones are:
+special meanings.  Most of them are not used very often.  Important ones are:
 
   • 00 NUL - Null: a byte with all zero bits, often used as end of string	
   • 07 BEL - Bell: makes a sound or flashes the terminal screen			
@@ -15,7 +15,7 @@ Unix-like systems use a single LF to denote the end of a line.  CP/M, DOS and
 Windows use the sequence CR LF.  These two are the most common variants, but
 some systems use other line endings such as a single CR or non-standard bytes.
 
-Alhough there are non-pritable, the bytes can still be written to video memory
+Alhough these are non-pritable, the bytes can still be written to video memory
 and thus become visible.  The table below shows the symbols from code page 437
 that was used for the orignial IBM PC.  The bitmap fonts included in this book
 use those glyphs as well.

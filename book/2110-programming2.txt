@@ -1,0 +1,17 @@
+
+
+
+A major milestone will be to place a program into these 64 bytes that allows us
+to read and write arbitrary memory locations through the 7 segment display and
+push buttons on the main board.  Such a program is called a machine code
+monitor.  It allows us to write much larger programs that do not fit into the 64
+bytes of the diode matrix.  But before we do that, we make simpler programs to
+understand all the necessary parts individually.  These are the topics that we
+will go through:
+
+  • CPU control instructions, jumps and loops					
+  • Memory, the stack and subroutines						
+  • Input and output								
+  • Arithmetic and lookup tables						
+
+
