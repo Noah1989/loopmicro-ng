@@ -3,13 +3,16 @@ PDFS := $(SOURCES:%.txt=%.pdf)
 
 .PHONY: date clean all default
 
-all: date book.pdf
+all: date book.txt book.pdf
 
 date:
 	sed -e "s/[0-9]\{4\}-[0-9][0-9]-[0-9][0-9]/$$(date -I)/" -i 0000-cover.txt
 
+book.txt: $(SOURCES)
+	awk 'FNR==1 && NR!=1 {print "--------------------------------------------------------------------------------"}{print}' $(SOURCES) | reformat -w 80 -j > book.txt
+
 %.textonly.raw: %.txt
-	./textonly.py < $< > $@
+	./textonly.py < $< | reformat -w 80 -j > $@
 
 %.notext.raw: %.txt
 	./notext.py < $< > $@
@@ -36,4 +39,4 @@ book.pdf: $(PDFS)
 	gs -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=book.pdf -dBATCH $(PDFS)
 
 clean:
-	rm -f *.raw *.html *.svg *.pdf
+	rm -f book.txt *.raw *.html *.svg *.pdf

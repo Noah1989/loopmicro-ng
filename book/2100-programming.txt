@@ -1,30 +1,24 @@
-
-
-
 The computer is designed so that it can be constructed from off-the-shelf parts
-(except for the printed circuit board) and immediately be used.  To do so, we
-need a way to tell the computer what to do.  This is called programming and is
+(except for the printed circuit board) and immediately be used. To do so, we
+need a way to tell the computer what to do. This is called programming and is
 nowadays almost always done by using a collection of existing programs on the
-computer to be programmed itself or on other computers.  Our computer is still
-completly ignorant of any programming and we don't want to use other computers. 
+computerq to be programmed itself or on other computers. Our computer is still
+completly ignorant of any programming and we don't want to use other computers.
 Therefore we devise our programs on paper and feed the binary code directly into
-the machine.  Even entering a binary program into the computer is a tedious
-process when there is no help from the CPU.  Traditionally this is done using a
-device called "front panel" which is a series of buttons, lamps and switches
-that are directly connected to the computer's bus.  This way the program can be
-punched bit by bit into main memory.  There are two downsides to this, though:
-firstly, this introduces a lot of mechanical parts whose only purpose is to
-enter a progam that makes them obsolete as soon as possible, and secondly the
-the entered program can easily be accidentally overwritten by a rogue program,
-and will be lost when the computer is turned off.  This can get frustrating very
-quickly because the same bytes need to be fed to the machine over and over
-again.  Therefore another approach is described here.  Constructing and using a
-front panel through the expansion port is certainly possible however, and is
-left as an exercise to the reader.
+the machine.
 
-The method described in this book uses a diode matrix ROM to feed the initial
-program to the machine.  The matrix has a place for every bit of 64 bytes, where
-a diode can either be placed (1) or not placed (0).  LEDs are being instead of
-regular diodes so that the bytes light up when accessed by the CPU.
+Even entering a binary program into the computer is a tedious process when there
+is no help from the CPU. Traditionally this is done using a device called "front
+panel" which is a series of buttons, lamps and switches that are directly
+connected to the computer's bus. This way the program can be punched bit by bit
+into main memory. There are two downsides to this, though: firstly, this
+introduces a lot of mechanical parts whose only purpose is to enter a progam
+that makes them obsolete as soon as possible, and secondly the the entered
+program can easily be accidentally overwritten by a rogue program, and will be
+lost when the computer is turned off. This can get frustrating very quickly
+because the same bytes need to be fed to the machine over and over again.
+Therefore another approach is described here. Constructing and using a front
+panel through the expansion port is certainly possible however, and is left as
+an exercise to the reader.
 
-
+The method in this book uses a diode matrix ROM as seen on the next page.

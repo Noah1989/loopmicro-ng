@@ -1,8 +1,5 @@
-
-
-
-Hex codes 20 through 7e are the ASCII printable characters.  They are the same
-on almost all computers.  Code 20 is the space character and therefore invisible
+Hex codes 20 through 7e are the ASCII printable characters. They are the same
+on almost all computers. Code 20 is the space character and therefore invisible
 both in print and on screen.
 
 	┌───────┬───────┬───────┬───────┬───────┬───────┬───────┬───────┐	
@@ -23,8 +20,5 @@ both in print and on screen.
 	└───────┴───────┴───────┴───────┴───────┴───────┴───────┴───────┘	
 
 The character with code 7f was originally used to denote data that has been
-deleted by punching out all holes on a paper tape.  It is sometimes used as an
-alternative to the Backspace (08).  In code page 437 it is a house symbol.
-
-
-
+deleted by punching out all holes on a paper tape. It is sometimes used as an
+alternative to the Backspace (08). In code page 437 it is a house symbol.

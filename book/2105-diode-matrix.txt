@@ -1,6 +1,4 @@
 
-
-
 	   ╔════╤════╗	   ╔════╤════╗	   ╔════╤════╗	   ╔════╤════╗		
 	00 ║••••│••••║	10 ║••••│••••║	20 ║••••│••••║	30 ║••••│••••║		
 	01 ║••••│••••║	11 ║••••│••••║	21 ║••••│••••║	31 ║••••│••••║		
@@ -23,7 +21,4 @@
 	0f ║••••│••••║	1f ║••••│••••║	2f ║••••│••••║	3f ║••••│••••║		
 	   ╚════╧════╝	   ╚════╧════╝	   ╚════╧════╝	   ╚════╧════╝		
 
-Each dot represents a place where an LED would go to make that bit a 1.  The
-numbers on the left are the memory adresses and the text in the middle is a
-cheat sheet for converting hexadecimal codes to binary.
-
+			      The diode matrix ROM				
