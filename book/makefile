@@ -6,7 +6,7 @@ PDFS := $(SOURCES:%.txt=%.pdf)
 all: date book.txt book.pdf print.pdf
 
 date:
-	sed -e "s/[0-9]\{4\}-[0-9][0-9]-[0-9][0-9]/$$(date -I)/" -i 0000-cover.txt
+	sed -e "s/[0-9]\{4\}-[0-9][0-9]-[0-9][0-9]/$$(date -I)/" -i 0005-cover2.txt
 
 book.txt: $(SOURCES)
 	awk 'FNR==1 && NR!=1 {print ""}{print}' $(SOURCES) | uniq | reformat -w 72 -j -l 4 | sed -e 's/^\(\s\{4\}\)\(\s\+\)/\2/' | ./expand.py > book.txt
