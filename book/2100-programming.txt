@@ -11,14 +11,14 @@ Even entering a binary program into the computer is a tedious process when there
 is no help from the CPU. Traditionally this is done using a device called "front
 panel" which is a series of buttons, lamps and switches that are directly
 connected to the computer's bus. This way the program can be punched bit by bit
-into main memory. There are two downsides to this, though: firstly, this
-introduces a lot of mechanical parts whose only purpose is to enter a progam
-that makes them obsolete as soon as possible, and secondly the the entered
-program can easily be accidentally overwritten by a rogue program, and will be
-lost when the computer is turned off. This can get frustrating very quickly
-because the same bytes need to be fed to the machine over and over again.
-Therefore another approach is described here. Constructing and using a front
-panel through the expansion port is certainly possible however, and is left as
-an exercise to the reader.
+into main memory. There are two downsides to this, though: It introduces a lot
+of mechanical parts whose only purpose is to enter a progam that makes them
+obsolete as soon as possible, and the the entered program can easily be
+accidentally overwritten by a rogue program, and will be lost when the computer
+is turned off. This can get frustrating very quickly because the same bytes need
+to be fed to the machine over and over again. Therefore another approach is
+described here. Constructing and using a front panel through the expansion port
+is certainly possible however, and is left as an exercise to the reader.
 
-The method in this book uses a diode matrix ROM as seen on the next page.
+Instead, the device we use to enter programs from this chapter of the book into
+the computer is a diode matrix ROM, which looks like this:

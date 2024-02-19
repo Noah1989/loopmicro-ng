@@ -3,18 +3,18 @@ special meanings. Most of them are not used very often. Important ones are:
 
   • 00 NUL - Null: a byte with all zero bits, often used as end of string	
   • 07 BEL - Bell: makes a sound or flashes the terminal screen			
-  • 08 BS  - Backspace: moves the cursor back, usually deleting a character	
+  • 08 BS  - Backspace: moves the cursor back, usually deleting one character	
   • 09 HT  - Horizontal tab: moves the cursor forward to the next tab stop	
   • 0a LF  - Line Feed: advances the cursor to the next line.			
   • 0f CR  - Carriage Return: moves the cursor to the beginning of the line	
 
 Unix-like systems use a single LF to denote the end of a line. CP/M, DOS and
-Windows use the sequence CR LF. These two are the most common variants, but
-some systems use other line endings such as a single CR or non-standard bytes.
+Windows use the sequence CR LF. These two are the most common variants, but some
+systems use other line endings such as a single CR or non-standard bytes.
 Alhough all control characters are non-pritable, their corresponding bytes can
 still be written to video memory and thus become visible. The table below shows
-the symbols from code page 437 that was used for the orignial IBM PC. The
-bitmap fonts included in this book use those glyphs as well.
+the symbols from code page 437 that was used for the orignial IBM PC. The bitmap
+fonts included in this book use those glyphs as well.
 
     ┌────────┬────────┬────────┬────────┬────────┬────────┬────────┬────────┐	
     │00 NUL  │01 SOH ☺│02 STX ☻│03 ETX ♥│04 EOT ♦│05 ENQ ♣│06 ACK ♠│07 BEL •│	

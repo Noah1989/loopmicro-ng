@@ -3,13 +3,13 @@ PDFS := $(SOURCES:%.txt=%.pdf)
 
 .PHONY: date clean all default
 
-all: date book.txt book.pdf
+all: date book.txt book.pdf print.pdf
 
 date:
 	sed -e "s/[0-9]\{4\}-[0-9][0-9]-[0-9][0-9]/$$(date -I)/" -i 0000-cover.txt
 
 book.txt: $(SOURCES)
-	awk 'FNR==1 && NR!=1 {print "--------------------------------------------------------------------------------"}{print}' $(SOURCES) | reformat -w 80 -j > book.txt
+	awk 'FNR==1 && NR!=1 {print ""}{print}' $(SOURCES) | uniq | reformat -w 72 -j -l 4 | sed -e 's/^\(\s\{4\}\)\(\s\+\)/\2/' | ./expand.py > book.txt
 
 %.textonly.raw: %.txt
 	./textonly.py < $< | reformat -w 80 -j > $@
@@ -21,7 +21,7 @@ book.txt: $(SOURCES)
 	sed -e '/CONTENT/{r $<' -e 'd}' template.htm | ./expand.py > $@
 
 %.pdf: %.html
-	wkhtmltopdf -s A5 -O Landscape $< $@
+	wkhtmltopdf --page-width 148mm --page-height 81mm -B 0 -T 0 $< $@
 
 %.nofonts.pdf: %.notext.pdf
 	gs -dNoOutputFonts -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=$@ -dBATCH $<
@@ -36,7 +36,10 @@ book.txt: $(SOURCES)
 	pdftk $*.textonly.pdf stamp $*.flat.pdf output $@
 
 book.pdf: $(PDFS)
-	gs -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=book.pdf -dBATCH $(PDFS)
+	pdfjam --paper a5paper --outfile book.pdf --nup 1x2 $(PDFS)
+
+print.pdf: book.pdf
+	pdfxup -kbb -bse -o print.pdf -ow book.pdf
 
 clean:
 	rm -f book.txt *.raw *.html *.svg *.pdf

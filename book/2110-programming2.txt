@@ -1,8 +1,8 @@
 The matrix has a place for every bit of 64 bytes, where a diode can either be
-placed (1) or not placed (0), represented by dots in the image on the previous
-page. LEDs are used instead of regular diodes so that the bytes light up when
-accessed by the CPU. The numbers on the left are the memory adresses and the
-text in the middle is a cheat sheet for converting hexadecimal codes to binary.
+placed (1) or not placed (0), represented by dots in the illustration. LEDs are
+used instead of regular diodes so that the bytes light up when accessed by the
+CPU. The numbers on the left are the memory adresses and the text in the middle
+is a cheat sheet for converting hexadecimal codes to binary.
 
 A major milestone will be to place a program into these few bytes that allows us
 to read and write arbitrary memory locations through the 7 segment display and
@@ -11,10 +11,10 @@ It allows us to write much larger programs that do not fit into the small diode
 matrix. But before we do that, we make simpler programs to understand all the
 necessary parts individually. These are the topics that we will go through:
 
-  • CPU control instructions, jumps and loops					
-  • Memory, the stack and subroutines						
-  • Input and output								
-  • Arithmetic and lookup tables						
+	• CPU control instructions, jumps and loops					
+	• Memory, the stack and subroutines						
+	• Input and output								
+	• Arithmetic and lookup tables						
 
 
 

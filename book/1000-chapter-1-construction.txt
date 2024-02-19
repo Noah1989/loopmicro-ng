@@ -1,13 +1,13 @@
 
 
- CHAPTER 1 - Construction							
- ════════════════════════							
+
+						      CHAPTER 1 - Construction	
+						      ════════════════════════	
+
 
 
 This part of the book guides you through the process of building the computer
 from individual components.
-
-
 
 
 
