@@ -1,0 +1,5 @@
+book.txt
+*.raw
+*.html
+*.svg
+*.pdf
