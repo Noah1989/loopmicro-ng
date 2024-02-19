@@ -11,10 +11,10 @@ It allows us to write much larger programs that do not fit into the small diode
 matrix. But before we do that, we make simpler programs to understand all the
 necessary parts individually. These are the topics that we will go through:
 
-	• CPU control instructions, jumps and loops					
-	• Memory, the stack and subroutines						
-	• Input and output								
-	• Arithmetic and lookup tables						
+  • CPU control instructions, jumps and loops					
+  • Memory, the stack and subroutines						
+  • Input and output								
+  • Arithmetic and lookup tables						
 
 
 
